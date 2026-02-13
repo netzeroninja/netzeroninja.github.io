@@ -1,5 +1,3 @@
-# netzeroninja.github.io
-GetOut Rewards site
 <!DOCTYPE html>
 <html lang="en">
 <head>
