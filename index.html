@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetOut Rewards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .rewards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .reward {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .reward:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .reward-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+        }
+        
+        .reward h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .reward p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .reward-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: opacity 0.3s ease;
+        }
+        
+        .reward-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎁 GetOut Rewards</h1>
+        
+        <div class="rewards-grid">
+            <div class="reward">
+                <svg class="reward-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#f0f0f0" rx="10"/>
+                    <circle cx="50" cy="40" r="20" fill="#667eea"/>
+                    <rect x="35" y="65" width="30" height="25" fill="#667eea"/>
+                </svg>
+                <h2>Reward Title 1</h2>
+                <p>Earn points every time you explore outdoor activities and complete challenges. Redeem your points for exclusive discounts and special offers.</p>
+                <button class="reward-btn">Learn More</button>
+            </div>
+            
+            <div class="reward">
+                <svg class="reward-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#f0f0f0" rx="10"/>
+                    <path d="M 50 20 L 61 40 L 82 40 L 65 55 L 73 75 L 50 60 L 27 75 L 35 55 L 18 40 L 39 40 Z" fill="#764ba2"/>
+                </svg>
+                <h2>Reward Title 2</h2>
+                <p>Unlock premium benefits and VIP access to exclusive events. Get early access to new activities and special member-only discounts.</p>
+                <button class="reward-btn">Learn More</button>
+            </div>
+            
+            <div class="reward">
+                <svg class="reward-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#f0f0f0" rx="10"/>
+                    <circle cx="50" cy="50" r="25" fill="none" stroke="#667eea" stroke-width="3"/>
+                    <path d="M 50 35 L 50 50 L 60 60" stroke="#667eea" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <h2>Reward Title 3</h2>
+                <p>Save time with our fast-track booking system. Skip the lines and enjoy instant confirmations for your favorite outdoor experiences.</p>
+                <button class="reward-btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
